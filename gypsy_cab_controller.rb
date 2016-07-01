@@ -18,7 +18,7 @@ class GypsyCabController
         print_negative_results
       else
         cabbie = parser.build_cabbie(cabbie_info)
-        print_positive_results
+        print_positive_results(cabbie.expiration_date)
       end
     elsif user_input == "2"
       cabbie_license = ask_for_license
@@ -27,7 +27,7 @@ class GypsyCabController
         print_negative_results
       else
         cabbie = parser.build_cabbie(cabbie_info)
-        print_positive_results
+        print_positive_results(cabbie.expiration_date)
       end
     else
       print_invalid_option

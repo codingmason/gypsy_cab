@@ -1,6 +1,6 @@
 
 class TaxiDriver
-attr_reader :type
+attr_reader :type, :expiration_date
 
 
   def initialize(options={})

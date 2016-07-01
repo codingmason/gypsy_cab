@@ -24,8 +24,8 @@ module GypsyCabView
     gets.chomp
   end
 
-  def print_positive_results
-    puts "Your cabbie has a valid medallion"
+  def print_positive_results(expiration_date)
+    puts "Your cabbie has a valid medallion that expires on #{expiration_date[0..9]}."
   end
 
   def print_negative_results
