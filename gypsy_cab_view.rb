@@ -28,9 +28,15 @@ module GypsyCabView
     puts "Your cabbie has a valid medallion that expires on #{expiration_date[0..9]}."
   end
 
-  def print_negative_results
-    puts "Call your loved ones to tell them goodbye."
-    puts "Give all your money to the cabbie and jump out of the vehicle."
+  def print_negative_results(cabbie_name)
+  puts "#{cabbie_name} is not a licensed taxi driver."
+   puts messages = ["Call your loved ones to tell them goodbye.",
+      "Give all your money to the cabbie and jump out of the vehicle.",
+      "Pray to whatever God you belive in. It won't actually help, but you'll feel better.",
+      "Kiss your kidneys goodbye.",
+      "Driver could be cool...",
+      "Would you like to donate your organs to science? You're about to."
+      ].sample
   end
 
   def print_invalid_option

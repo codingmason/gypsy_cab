@@ -15,7 +15,7 @@ class GypsyCabController
      cabbie_name = ask_for_name
      cabbie_info = parser.parse_name(cabbie_name)
       if cabbie_info.length == 0
-        print_negative_results
+        print_negative_results(cabbie_name)
       else
         cabbie = parser.build_cabbie(cabbie_info)
         print_positive_results(cabbie.expiration_date)
@@ -24,7 +24,7 @@ class GypsyCabController
       cabbie_license = ask_for_license
       cabbie_info = parser.parse_license_number(cabbie_license)
        if cabbie_info.length == 0
-        print_negative_results
+        print_negative_results("This cabbie")
       else
         cabbie = parser.build_cabbie(cabbie_info)
         print_positive_results(cabbie.expiration_date)
